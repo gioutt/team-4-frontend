@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900;
+  }
+}
+
+/* FullCalendar Customizations */
+.fc {
+  --fc-button-bg-color: #D4AF37;
+  --fc-button-border-color: #D4AF37;
+  --fc-button-hover-bg-color: #B5952F;
+  --fc-button-hover-border-color: #B5952F;
+  --fc-button-active-bg-color: #997E28;
+  --fc-button-active-border-color: #997E28;
+}
