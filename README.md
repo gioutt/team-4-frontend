@@ -55,7 +55,7 @@ Se utiliza **Axios** para consumir la API mediante variables de entorno.
 ```env
 VITE_API_URL=https://team-4-backend-production.up.railway.app
 ```
-Este archivo no se agrego por el .gitignore
+Este archivo no se agregó por el .gitignore
 
 ---
 # Instalación Local
@@ -75,7 +75,7 @@ Este archivo no se agrego por el .gitignore
 | Recurso | Enlace |
 |---|---|
 | Sitio en producción | https://team-4-frontend.vercel.app |
-| Repositorio Frontend | https://github.com/gioutt/team-4-backend.git |
+| Repositorio Backend | https://github.com/gioutt/team-4-backend.git |
 
 ---
 
