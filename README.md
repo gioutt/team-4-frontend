@@ -71,6 +71,18 @@ Este archivo no se agregó por el .gitignore
    ```
    
 ---
+
+## Acceso al Sistema
+
+Para iniciar sesión, utilizar las credenciales definidas en el backend:
+
+- Administrador: admin@admin.com
+- Usuario: test@example.com
+
+Password para ambos:
+password
+
+---
 ## Despliegue
 | Recurso | Enlace |
 |---|---|
