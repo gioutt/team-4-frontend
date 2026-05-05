@@ -3,6 +3,7 @@ import { Outlet, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { LogOut, Calendar, Home, LayoutDashboard, Building2, Menu, X } from 'lucide-react';
 import useBase64Image from '../hooks/useBase64Image';
+import { Wrench, Search } from 'lucide-react';
 
 const Layout = () => {
     const { user, logout } = useAuth();
@@ -51,6 +52,12 @@ const Layout = () => {
                                         </Link>
                                         <Link to="/reservations/new" className="border-transparent text-gray-300 hover:border-white hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                                             <Calendar className="w-4 h-4 mr-2" /> Nueva Reserva
+                                        </Link>
+                                        <Link to="/reports" className="border-transparent text-gray-300 hover:border-white hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                            <Wrench className="w-4 h-4 mr-2" /> Soporte
+                                        </Link>
+                                        <Link to="/lost-items" className="border-transparent text-gray-300 hover:border-white hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                                            <Search className="w-4 h-4 mr-2" /> Objetos Perdidos
                                         </Link>
                                     </>
                                 )}
@@ -102,6 +109,12 @@ const Layout = () => {
                                     </Link>
                                     <Link to="/reservations/new" onClick={closeMobileMenu} className="text-gray-300 hover:text-white hover:bg-[#2a3a5c] block px-3 py-2 rounded-md text-base font-medium">
                                         <Calendar className="w-4 h-4 mr-2 inline" /> Nueva Reserva
+                                    </Link>
+                                    <Link to="/reports" onClick={closeMobileMenu} className="text-gray-300 hover:text-white hover:bg-[#2a3a5c] block px-3 py-2 rounded-md text-base font-medium">
+                                        <Wrench className="w-4 h-4 mr-2 inline" /> Soporte
+                                    </Link>
+                                    <Link to="/lost-items" onClick={closeMobileMenu} className="text-gray-300 hover:text-white hover:bg-[#2a3a5c] block px-3 py-2 rounded-md text-base font-medium">
+                                        <Search className="w-4 h-4 mr-2 inline" /> Objetos Perdidos
                                     </Link>
                                 </>
                             )}

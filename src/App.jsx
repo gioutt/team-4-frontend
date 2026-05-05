@@ -8,6 +8,8 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import BookSpace from './pages/BookSpace';
 import Facilities from './pages/Facilities';
+import Reports from './pages/Reports';
+import LostItems from './pages/LostItems';
 
 function App() {
     return (
@@ -22,6 +24,8 @@ function App() {
                     <Route element={<PrivateRoute />}>
                         <Route path="dashboard" element={<Dashboard />} />
                         <Route path="reservations/new" element={<BookSpace />} />
+                        <Route path="reports" element={<Reports />} />
+                        <Route path="lost-items" element={<LostItems />} />
                     </Route>
 
                     {/* Rutas de Admin */}
